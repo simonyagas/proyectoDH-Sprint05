@@ -1,0 +1,57 @@
+
+body{
+  background-color: #FFFF66;
+}
+h3{
+  padding: 20px;
+}
+.card-product .img-wrap {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+    text-align: center;
+    background-color: #FFFF66;
+    border-color: red;
+}
+.card-product .img-wrap img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    background-color: #FFFF66;
+    border-color: red;
+}
+.card-product .info-wrap {
+    overflow: hidden;
+    padding: 15px;
+    border-top: 1px solid #eee;
+    background-color: #FFFF66;
+    border-color: red;
+}
+.card-product .bottom-wrap {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    background-color: #FFFF66;
+    border-color: red;
+}
+
+.label-rating { margin-right:10px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+    border-color: red;
+}
+
+.card-product .price-old {
+    color: #999;
+    border-color: red;
+}
+ion-icon { font-size: 40px;
+  color: red !important;
+ }
+ h2{
+   font-family: 'Open Sans', sans-serif;
+ }
+h3{
+  font-family: 'Open Sans', sans-serif;
+}

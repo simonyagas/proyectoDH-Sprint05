@@ -1,0 +1,32 @@
+.mainLogo {
+  width: 50px;
+}
+
+.carousel {
+  margin-top: 58px;
+}
+._carrusel{
+  width: 100vh;
+  height: 80vh;
+}
+
+.chiquita{
+  /* width: 100vh;
+  height: 80%; */
+  width: 100%;
+}
+@media (max-width: 767px) {
+  #carouselExampleControls{
+    display: none;
+  }
+  #fijaMobile{
+    display: block;
+    margin-top: 58px;
+  }
+}
+
+@media (min-width: 767px){
+  #fijaMobile{
+    display: none;
+  }
+}
