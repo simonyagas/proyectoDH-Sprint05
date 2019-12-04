@@ -30,6 +30,16 @@
           <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
           <!-- Codigo ionicons -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    
+
+
+    <link href="{{ asset('css/user.css') }}" rel="stylesheet">
+    >
+
+
+
+
+
 </head>
 <body>
     <div id="app">
@@ -56,22 +66,22 @@
                               <a class="nav-link" href="/">{{ __('Home') }}</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="#">{{ __('Productos') }}</a>
+                              <a class="nav-link" href="/productos">{{ __('Productos') }}</a>
                           </li>
                           <li class="nav-item">
                               <a class="nav-link" href="/faq">{{ __('FAQ') }}</a>
                           </li><li class="nav-item">
-                              <a class="nav-link" href="#">{{ __('Contacto') }}</a>
+                              <a class="nav-link" href="/contacto">{{ __('Contacto') }}</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="#">{{ __('Perfil') }}</a>
+                              <a class="nav-link" href="/perfil">{{ __('Perfil') }}</a>
                           </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Ingreso') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registrate') }}</a>
                                 </li>
                             @endif
                         @else

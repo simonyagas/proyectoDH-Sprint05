@@ -25,5 +25,5 @@ Route::get('/faq', function(){
   return view('faq');
 });
 
-Route::get('/perfil','AdministrarPeliculasController@create');
-Route::get('/productos','AdministrarPeliculasController@create');
+Route::get('/perfil','UsuariosController@index');
+Route::get('/productos','ProductosController@index');

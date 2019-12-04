@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<link href="{{ asset('css/faq.css') }}" rel="stylesheet">
 @section('content')
 
   <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
