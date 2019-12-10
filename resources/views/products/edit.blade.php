@@ -23,7 +23,7 @@
         </div>
     @endif
   
-    <form action="{{ route('products.update',$product->id) }}" method="POST">
+    <form action="{{ route('products.update',$product->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
    
@@ -46,6 +46,26 @@
                     <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $product->detail }}</textarea>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <label for="img" class="negrita">Selecciona una imagen:</label>                         
+                    <div>
+                    <input name="img" type="file" id="img">
+                    <br>
+                    <br>
+                    @if ( !empty ( $product->img) )
+        
+                      <span>Imagen Actual: </span>
+                      <br>
+                      <img src="../../../uploads/{{ $product->img }}" width="200" class="img-fluid">
+        
+                    @else
+        
+                      Aún no se ha cargado una imagen para este producto
+        
+                    @endif                
+                    </div>
+                </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
