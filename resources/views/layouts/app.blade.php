@@ -34,10 +34,6 @@
 
 
     <link href="{{ asset('css/user.css') }}" rel="stylesheet">
-    >
-
-
-
 
 
 </head>
@@ -61,13 +57,12 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        @guest
+                        
+                        
                           <li class="nav-item">
                               <a class="nav-link" href="/">{{ __('Home') }}</a>
                           </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="/productos">{{ __('Productos') }}</a>
-                          </li>
+                          
                           <li class="nav-item">
                               <a class="nav-link" href="/faq">{{ __('FAQ') }}</a>
                           </li><li class="nav-item">
@@ -76,15 +71,22 @@
                           <li class="nav-item">
                               <a class="nav-link" href="/perfil">{{ __('Perfil') }}</a>
                           </li>
+                          @guest 
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Ingreso') }}</a>
                             </li>
-                            @if (Route::has('register'))
+                                
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Registrate') }}</a>
                                 </li>
-                            @endif
-                        @else
+                                @endguest
+                                
+
+                                @auth
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/products">{{ __('Productos') }}</a>
+                                </li>
+                                
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -102,7 +104,8 @@
                                     </form>
                                 </div>
                             </li>
-                        @endguest
+                            @endauth
+            
                     </ul>
                 </div>
             </div>

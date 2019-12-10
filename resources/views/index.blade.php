@@ -2,8 +2,6 @@
 <link href="{{ asset('css/index.css') }}" rel="stylesheet">
 @section('content')
 
-
-
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner">
   <div class="carousel-item active">
@@ -25,10 +23,5 @@
   <span class="sr-only">Next</span>
 </a>
 </div>
-
-
-
-
-
 
 @endsection
