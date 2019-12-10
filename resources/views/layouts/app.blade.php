@@ -57,8 +57,6 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-
-                        @guest
                           <li class="nav-item">
                               <a class="nav-link" href="/">{{ __('Home') }}</a>
                           </li>
@@ -70,39 +68,26 @@
                           </li><li class="nav-item">
                               <a class="nav-link" href="/contacto">{{ __('Contacto') }}</a>
                           </li>
-
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Ingreso') }}</a>
                             </li>
-
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Registrate') }}</a>
                                 </li>
-                                @endguest
-
-
+                                
                                 @auth
-
                                 <li class="nav-item text-danger">
                                     <a class="nav-link text-danger" href="/products">{{ __('CRUD') }}</a>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/products">{{ __('Editar Productos') }}</a>
-
-                                </li>
-
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
-
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Cerrar Sesion') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
