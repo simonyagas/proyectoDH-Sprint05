@@ -30,7 +30,7 @@
           <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
           <!-- Codigo ionicons -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    
+
 
 
     <link href="{{ asset('css/user.css') }}" rel="stylesheet">
@@ -39,15 +39,15 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Cuerdas') }}
-                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-2">
+                    <!-- Links -->
+                    <img src="./img/logo.png" class="w-50 logo-footer" >
+                  </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
@@ -57,12 +57,14 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        
-                        
+
+
                           <li class="nav-item">
                               <a class="nav-link" href="/">{{ __('Home') }}</a>
                           </li>
-                          
+                          <li class="nav-item">
+                              <a class="nav-link" href="/productos">{{ __('Productos') }}</a>
+                          </li><li class="nav-item">
                           <li class="nav-item">
                               <a class="nav-link" href="/faq">{{ __('FAQ') }}</a>
                           </li><li class="nav-item">
@@ -71,22 +73,22 @@
                           <li class="nav-item">
                               <a class="nav-link" href="/perfil">{{ __('Perfil') }}</a>
                           </li>
-                          @guest 
+                          @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Ingreso') }}</a>
                             </li>
-                                
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Registrate') }}</a>
                                 </li>
                                 @endguest
-                                
+
 
                                 @auth
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/products">{{ __('Productos') }}</a>
+                                <li class="nav-item text-danger">
+                                    <a class="nav-link text-danger" href="/products">{{ __('CRUD') }}</a>
                                 </li>
-                                
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -105,7 +107,7 @@
                                 </div>
                             </li>
                             @endauth
-            
+
                     </ul>
                 </div>
             </div>
@@ -115,9 +117,9 @@
             @yield('content')
         </main>
     </div>
-    <footer id="footer" class="page-footer font-small unique-color-dark">
+    <footer id="footer" class="page-footer font-small">
       <!-- Footer Links -->
-      <div class="container text-center text-md-left mt-5">
+      <div class="container text-center text-md-left mt-5 ">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column1 -->

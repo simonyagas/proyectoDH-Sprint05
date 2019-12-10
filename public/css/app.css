@@ -9083,20 +9083,13 @@ button.bg-dark:focus {
   padding: 1.5rem !important;
 }
 
-.pt-4,
-.py-4 {
-  padding-top: 1.5rem !important;
-}
 
 .pr-4,
 .px-4 {
   padding-right: 1.5rem !important;
 }
 
-.pb-4,
-.py-4 {
-  padding-bottom: 1.5rem !important;
-}
+
 
 .pl-4,
 .px-4 {
@@ -11351,4 +11344,3 @@ a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-
