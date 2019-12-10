@@ -38,30 +38,28 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        
         $request->validate([
             'name' => 'required',
             'precio' => 'required',
             'detail' => 'required',
-            'img' => 'required | image'
+            'img'=> 'required'
+            
         ]);
         
-  
-        
+        $product = new Product($request->all());
+
         $imagen = $request->file('img');
+
         if ($imagen) {
-			// Armo un nombre único para este archivo
-			$imagenFinal = uniqid("img_") . "." . $imagen->extension();
-
-			// Subo el archivo en la carpeta elegida
-			$imagen->storePubliclyAs("public/img", $imagenFinal);
-
-			// Le asigno la imagen a la película que guardamos
-			$product->img = $imagenFinal;
+            $imagenF = uniqid("img-") . "." . $imagen->extension();
+            $imagen->storePubliclyAs("public/img", $imagenF);
+            $product->img = $imagenF;
         }
-        Product::create($request->all());
-   
+        $product->save();
+
         return redirect()->route('products.index')
-                        ->with('success','Product created successfully.');
+                        ->with('success','Producto.');
     }
    
     /**
@@ -99,9 +97,21 @@ class ProductController extends Controller
             'name' => 'required',
             'precio' => 'required',
             'detail' => 'required',
+            'img' => 'required',
+
         ]);
-        
         $product->update($request->all());
+
+        $imagen = $request->file('img');
+
+        if ($imagen) {
+            $imagenF = uniqid("img-") . "." . $imagen->extension();
+            $imagen->storePubliclyAs("public/img", $imagenF);
+            $product->img = $imagenF;
+        }
+        $product->save();
+
+        
   
         return redirect()->route('products.index')
                         ->with('success','Product updated successfully');

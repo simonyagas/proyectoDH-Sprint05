@@ -70,10 +70,17 @@
                           </li><li class="nav-item">
                               <a class="nav-link" href="/contacto">{{ __('Contacto') }}</a>
                           </li>
-                          <li class="nav-item">
+
+                          {{-- Arreglar perfil de usuario, no es necesario --}}
+                          {{-- <li class="nav-item">
                               <a class="nav-link" href="/perfil">{{ __('Perfil') }}</a>
+<<<<<<< HEAD
                           </li>
                           @guest
+=======
+                          </li> --}}
+                          @guest 
+>>>>>>> 1d647c8641e4bae7f9334b7c94116d4c1a263a93
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Ingreso') }}</a>
                             </li>
@@ -85,8 +92,13 @@
 
 
                                 @auth
+<<<<<<< HEAD
                                 <li class="nav-item text-danger">
                                     <a class="nav-link text-danger" href="/products">{{ __('CRUD') }}</a>
+=======
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/products">{{ __('Editar Productos') }}</a>
+>>>>>>> 1d647c8641e4bae7f9334b7c94116d4c1a263a93
                                 </li>
 
                             <li class="nav-item dropdown">
@@ -98,7 +110,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Cerrar Sesion') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
