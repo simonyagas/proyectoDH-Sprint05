@@ -68,29 +68,19 @@
                           </li><li class="nav-item">
                               <a class="nav-link" href="/contacto">{{ __('Contacto') }}</a>
                           </li>
-<<<<<<< HEAD
 
-
-                           <li class="nav-item">
-                              <a class="nav-link" href="/perfil">{{ __('Carrito') }}</a>
-
-                          </li>
-                          @guest
-
-                          </li> 
-                          @guest
-
-=======
->>>>>>> b3546c8ecfc59581996e336d492c0460a7600909
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Ingreso') }}</a>
                             </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Registrate') }}</a>
                                 </li>
-                                
+                                <li class="nav-item">
+                                   <a class="nav-link" href="/carrito"><ion-icon class="ion-icon"name="cart"></ion-icon></a>
+
+                                </li>
                                 @auth
-<<<<<<< HEAD
+
 
                                 <li class="nav-item text-danger">
                                     <a class="nav-link text-danger" href="/products">{{ __('CRUD') }}</a>
@@ -100,10 +90,10 @@
 
                                 </li>
 
-=======
+
                                 <li class="nav-item text-danger">
                                     <a class="nav-link text-danger" href="/products">{{ __('CRUD') }}</a>
->>>>>>> b3546c8ecfc59581996e336d492c0460a7600909
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>

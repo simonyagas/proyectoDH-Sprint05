@@ -24,10 +24,11 @@ Route::get('/contacto', function(){
 Route::get('/faq', function(){
   return view('faq');
 });
+Route::get('/productos', function(){
+  return view('productos');
+});
 Route::resource('products','ProductController');
 
 Route::get('/perfil','UsuariosController@index');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
