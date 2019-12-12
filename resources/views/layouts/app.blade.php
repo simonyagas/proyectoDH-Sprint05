@@ -46,19 +46,21 @@
                 </button>
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-2">
                     <!-- Links -->
-                    <img src="./img/logo.png" class="w-50 logo-footer" >
                   </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
+                    <ul class="navbar-nav mr-4">
+                     <img src="./img/logo.png" class="w-50 logo-footer" >
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                      @guest
+
+
                         <!-- Authentication Links -->
                           <li class="nav-item">
-                              <a class="nav-link" href="/">{{ __('Home') }}</a>
+                              <a class="nav-link " href="/">{{ __('Home') }}</a>
                           </li>
                           <li class="nav-item">
                               <a class="nav-link" href="/productos">{{ __('Productos') }}</a>
@@ -75,21 +77,19 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Registrate') }}</a>
                                 </li>
-                                <li class="nav-item">
-                                   <a class="nav-link" href="/carrito"><ion-icon class="ion-icon"name="cart"></ion-icon></a>
-
-                                </li>
-                                @auth
-
-
-                                <li class="nav-item text-danger">
-                                    <a class="nav-link text-danger" href="/products">{{ __('CRUD') }}</a>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/products">{{ __('Editar Productos') }}</a>
-
-                                </li>
-
+                        @endguest
+                        @auth
+                          <li class="nav-item">
+                              <a class="nav-link " href="/">{{ __('Home') }}</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="/productos">{{ __('Productos') }}</a>
+                          </li><li class="nav-item">
+                          <li class="nav-item">
+                              <a class="nav-link" href="/faq">{{ __('FAQ') }}</a>
+                          </li><li class="nav-item">
+                              <a class="nav-link" href="/contacto">{{ __('Contacto') }}</a>
+                          </li>
 
                                 <li class="nav-item text-danger">
                                     <a class="nav-link text-danger" href="/products">{{ __('CRUD') }}</a>
@@ -104,6 +104,10 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Cerrar Sesion') }}
                                     </a>
+                                    <li class="nav-item">
+                                       <a class="nav-link" href="/carrito"><ion-icon class="ion-icon"name="cart"></ion-icon></a>
+
+                                    </li>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>

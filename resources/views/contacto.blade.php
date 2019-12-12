@@ -4,11 +4,12 @@
 
   <div class="tituloybici">
       <i class="fas fa-biking fa-5x mt-4 d-flex justify-content-center"></i>
-      <h1 class = "col-12" >Queremos conocer tu opinion</h2>
+      <h1 class = "col-12"  >Queremos conocer tu opinión</h2>
     </div>
 
     <section class= "formulario mt-3">
-      <form class="formuulario p-4">
+      <form class="formuulario p-4 mb-5
+      ">
         <div class="form-group">
           <label for="exampleInputEmail1">Nombre</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre Completo">

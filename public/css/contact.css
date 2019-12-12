@@ -4,7 +4,7 @@
 }
 
 .y-marca {
-  font-family: 'Faster One', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
 }
 
@@ -38,7 +38,7 @@ h1{
   margin: 15px;
   text-align: center;
   margin-top: 20px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 45px;
 }
 
@@ -46,6 +46,6 @@ h2{
   margin: 15px;
   text-align: center;
   margin-top: 20px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 45px;
 }
