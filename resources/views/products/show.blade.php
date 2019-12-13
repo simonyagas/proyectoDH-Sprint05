@@ -1,4 +1,6 @@
+
 @extends('products.layout')
+
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -10,7 +12,7 @@
             </div>
         </div>
     </div>
-   
+
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
@@ -33,8 +35,8 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Imagen:</strong>
-                <img src="/public/img/{{ $product->img }}" alt="">
-                
+                <img src="storage/app/public/img/{{ $product->img }}" alt="">
+
             </div>
         </div>
     </div>

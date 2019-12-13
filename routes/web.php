@@ -24,9 +24,11 @@ Route::get('/contacto', function(){
 Route::get('/faq', function(){
   return view('faq');
 });
-Route::get('/productos', function(){
-  return view('productos');
+Route::get('/carrito', function(){
+  return view('carrito');
 });
+Route::get('/productos','ProductosController@index');
+
 Route::resource('products','ProductController');
 
 Route::get('/perfil','UsuariosController@index');

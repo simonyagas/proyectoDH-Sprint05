@@ -131,26 +131,26 @@ class ProductController extends Controller
                         ->with('success','Product deleted successfully');
     }
 }
-public function addCarrito($id){
-    $productoCarrito = product::find($id);
+  //  public function addCarrito($id){
+    //$productoCarrito = product::find($id);
     //dd($peliculaFavorita['title']);
-    $misProductos = [
-       'id' => $productoCarrito['id'],
-       'name' => $productoCarrito['name'],
-       'detail' => $productoCarrito['detail'],
-       'img' => $productoCarrito['img']
-    ];
-    session()->put('compras.'.$id,$misProductos);
-    return view('carrito');
+    //$misProductos = [
+      // 'id' => $productoCarrito['id'],
+      // 'name' => $productoCarrito['name'],
+       //'detail' => $productoCarrito['detail'],
+      // 'img' => $productoCarrito['img']
+    //];
+    //session()->put('compras.'.$id,$misProductos);
+    //return view('carrito');
 
-}
+//}
 //Método para mostrar las peliculas favoritas seleccionadas - Simulo mostrar el carrito - tal como lo indico Ramiro
-public function showCarrito(){
-    return view('carrito');
-}
+//public function showCarrito(){
+  //  return view('carrito');
+//}
 
 //Método para remover una pelóicula de mi lista de favoritas
-public function removeCarrito($id){
-    session()->pull('compras.'.$id,'default');
-    return view('carrito');
-}
+//public function removeCarrito($id){
+    //session()->pull('compras.'.$id,'default');
+    //return view('carrito');
+//}
