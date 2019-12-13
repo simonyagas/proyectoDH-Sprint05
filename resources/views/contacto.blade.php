@@ -8,8 +8,7 @@
     </div>
 
     <section class= "formulario mt-3">
-      <form class="formuulario p-4 mb-5
-      ">
+      <form class="formuulario p-4 mb-5">
         <div class="form-group">
           <label for="exampleInputEmail1">Nombre</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre Completo">
