@@ -1,5 +1,5 @@
 @extends('products.layout')
-  
+
 @section('content')
 <div class="row">
     <div class="col-lg-12 margin-tb">
@@ -11,7 +11,7 @@
         </div>
     </div>
 </div>
-   
+
 @if ($errors->any())
     <div class="alert alert-danger">
         <strong>Ojo!</strong> La pifiaste vieja.<br><br>
@@ -22,10 +22,10 @@
         </ul>
     </div>
 @endif
-   
+
 <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
     @csrf
-  
+
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
@@ -47,7 +47,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-            <label for="img" class="negrita">Selecciona una imagen:</label>                         
+            <label for="img" class="negrita">Selecciona una imagen:</label>
             <div>
             <input name="img" type="file" id="img">
             <br>
@@ -62,7 +62,7 @@
 
               Aún no se ha cargado una imagen para este producto
 
-            @endif                
+            @endif
             </div>
         </div>
 
@@ -71,6 +71,6 @@
                 <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
     </div>
-   
+
 </form>
 @endsection

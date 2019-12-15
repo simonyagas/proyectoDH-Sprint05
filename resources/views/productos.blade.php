@@ -3,15 +3,15 @@
 @section('content')
 
   <div class="row">
-    <?php foreach ($products as $key ):?>
+    <?php foreach ($product as $key ):?>
   <div class="col-md-4">
   	<figure class="card card-product">
 
-  		<div class="img-wrap"><img src={{$products->img}}></div>
+  		<div class="img-wrap"><img src={{$product->img}}></div>
   		<figcaption class="info-wrap">
-  				<h4 class="title"> <a href="productos.php" class="nav-item nav-link">{{$products->titulo}}</a></h4>
-  				<p class="desc">{{$products->descp}}</p>
-          <p class="desc">Precio: ${{$products->precio}}</p>
+  				<h4 class="title"> <a href="productos.php" class="nav-item nav-link">{{$product->titulo}}</a></h4>
+  				<p class="desc">{{$product->descp}}</p>
+          <p class="desc">Precio: ${{$product->precio}}</p>
   				<div class="rating-wrap">
   					<div class="label-rating"></div>
   					<div class="label-rating"></div>
