@@ -52,7 +52,7 @@
             <input name="img" type="file" id="img">
             <br>
             <br>
-            @if ( !empty ( $product->img) )
+            {{-- @if ( !empty ( $product->img) )
 
               <span>Imagen Actual: </span>
               <br>
@@ -62,7 +62,7 @@
 
               Aún no se ha cargado una imagen para este producto
 
-            @endif
+            @endif --}}
             </div>
         </div>
 

@@ -50,7 +50,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-4">
-                     <img src="./img/logo.png" class="w-50 logo-footer" >
+                     <img src="../img/logo.png" class="w-50 logo-footer" >
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -62,9 +62,9 @@
                           <li class="nav-item">
                               <a class="nav-link " href="/">{{ __('Home') }}</a>
                           </li>
-                          <li class="nav-item">
+                          {{-- <li class="nav-item">
                               <a class="nav-link" href="/productos">{{ __('Productos') }}</a>
-                          </li><li class="nav-item">
+                          </li><li class="nav-item"> --}}
                           <li class="nav-item">
                               <a class="nav-link" href="/faq">{{ __('FAQ') }}</a>
                           </li><li class="nav-item">
@@ -82,17 +82,23 @@
                           <li class="nav-item">
                               <a class="nav-link " href="/">{{ __('Home') }}</a>
                           </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="/productos">{{ __('Productos') }}</a>
-                          </li><li class="nav-item">
+                          
                           <li class="nav-item">
                               <a class="nav-link" href="/faq">{{ __('FAQ') }}</a>
                           </li><li class="nav-item">
                               <a class="nav-link" href="/contacto">{{ __('Contacto') }}</a>
                           </li>
+                          
 
-                                <li class="nav-item text-danger">
-                                    <a class="nav-link text-danger" href="/products">{{ __('CRUD') }}</a>
+                            
+                          <li class="nav-item text-danger">
+                            <a class="nav-link text-danger" href="/products">{{ __('Productos') }}</a>
+
+
+                          {{-- <li class="nav-item">
+                            <a class="nav-link" href="/productos">{{ __('Productos') }}</a>
+                        </li><li class="nav-item"> --}}
+
 
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -132,7 +138,7 @@
           <!-- Grid column1 -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
-              <img src="./img/logo.png" class="w-50 logo-footer" >
+              <img src="../img/logo.png" class="w-50 logo-footer" >
             </div>
           <!-- Grid column1 -->
           <!-- Grid column2 -->

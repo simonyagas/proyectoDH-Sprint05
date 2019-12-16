@@ -10,3 +10,22 @@
 * [Simón](https://github.com/simonyagas) :neckbeard:
 
 
+Para correr el proyecto:
+
+clonar
+
+Chequear el .env
+
+php artisan key:generate
+
+composer update
+
+php artisan migrate:refresh --seed
+
+php artisan serve
+
+Usuario: usuario@gmail.com
+pass: usuario1234
+
+Administrador: admin@gmail.com
+pass: admin1234
