@@ -62,9 +62,6 @@
                           <li class="nav-item">
                               <a class="nav-link " href="/">{{ __('Home') }}</a>
                           </li>
-                          {{-- <li class="nav-item">
-                              <a class="nav-link" href="/productos">{{ __('Productos') }}</a>
-                          </li><li class="nav-item"> --}}
                           <li class="nav-item">
                               <a class="nav-link" href="/faq">{{ __('FAQ') }}</a>
                           </li><li class="nav-item">

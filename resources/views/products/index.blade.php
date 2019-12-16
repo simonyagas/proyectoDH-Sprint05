@@ -10,7 +10,7 @@
             
         </div>
     </div>
-    @if(Auth::user()->hasRole('admin'))
+@if(Auth::user()->hasRole('admin'))
     <div class="pull-right">
         <a class="btn btn-success" href="{{ route('products.create') }}"> Agregar Producto</a>
     </div>
@@ -52,32 +52,42 @@
     {!! $products->links() !!}
                             
 
-                          @else
+
+@else
+
 
                           <table class="table table-bordered">
                             <tr>
-                                <th>Numero</th>
+                               
                                 <th>Nombre</th>
                                 <th>Precio</th>
                                 <th>Detalles</th>
                                 <th>Imagen</th>
+                                <th>Ver más</th>
                                 
                             </tr>
                             @foreach ($products as $product)
                             <tr>
-                                <td>{{ ++$i }}</td>
+                                
                                 <td>{{ $product->name }}</td>
                                 <td>{{ $product->precio }}</td>
                                 <td>{{ $product->detail }}</td>
                                 <td><img src="{{ asset("storage/img/$product->img" )}} "width="50" height="50"  alt=""> </td>
-                                
+                                <td>
+                    
+                                        <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Mostrar</a>
+                            
+                                        @csrf
+                                        
+                                    </form>
+                                </td>
                             </tr>
                             @endforeach
                         </table>
                     
                         {!! $products->links() !!}
 
-                          @endif
+@endif
 
     
 </div>
