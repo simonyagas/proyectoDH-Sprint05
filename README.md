@@ -10,19 +10,30 @@
 * [Simón](https://github.com/simonyagas) :neckbeard:
 
 
-Para correr el proyecto:
+#### Para correr el proyecto:
 
-clonar
+*clonar el repo
 
-Chequear el .env
+*updatea dependencias
+```
+> composer update
+```
 
-php artisan key:generate
+*crear y configurar el .env
 
-composer update
+*generar el key de artisan
+```
+> php artisan key:generate
+```
 
-php artisan migrate:refresh --seed
-
-php artisan serve
+*hacer la migracion de datos
+```
+> php artisan migrate:refresh --seed
+```
+*levantar el proyecto
+```
+> php artisan serve
+```
 
 Usuario: usuario@gmail.com
 pass: usuario1234
