@@ -6,7 +6,6 @@
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">#</th>
           <th scope="col">Producto</th>
           <th scope="col">Cantidad</th>
           <th scope="col">Precio</th>
@@ -15,7 +14,6 @@
       <tbody>
         @foreach ($cart as $item)
           <tr>
-            <th scope="row">{{$item->id}}</th>
             <td>{{$item->name}}</td>
             <td>{{$item->cant}}</td>
             <td>{{$item->price}}</td>
