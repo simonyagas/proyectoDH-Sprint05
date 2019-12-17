@@ -24,9 +24,7 @@ Route::get('/contacto', function(){
 Route::get('/faq', function(){
   return view('faq');
 });
-Route::get('/carrito', function(){
-  return view('carrito');
-});
+Route::get('/carrito/{{id}}', 'CartController@index');
 Route::get('/productos','ProductosController@index');
 
 Route::resource('products','ProductController');
@@ -35,6 +33,7 @@ Route::get('/perfil','UsuariosController@index');
 
 Auth::routes();
 
+Route::get('/carrito/{product}', 'CartController@store');
 Route::post('/addtocart', 'CartController@store');
 Route::get('/cart', 'CartController@index')->middleware('auth');
 Route::post('/cartclose', 'CartController@cartclose');

@@ -1,60 +1,37 @@
 <?php
-
 use Illuminate\Database\Seeder;
-use App\Product;
-
-class ProductsTableSeeder extends Seeder
+use App\Product;class ProductsTableSeeder extends Seeder
 {
-
-    public function run()
-    {
-         Product::insert([
-             'name' => 'Niza',
-             'precio' => '100',
-             'detail' => 'detalle',
-             'img' => 'producto1a.jpeg',
-         ]);
-         Product::insert([
-            'name' => 'Niza',
-            'precio' => '200',
-            'detail' => 'detalle',
-            'img' => 'producto1a.jpeg',
-        ]);
-        Product::insert([
-            'name' => 'Niza',
-            'precio' => '300',
-            'detail' => 'detalle',
-            'img' => 'producto1a.jpeg',
-        ]);
-        Product::insert([
-            'name' => 'Niza',
-            'precio' => '400',
-            'detail' => 'detalle',
-            'img' => 'producto1a.jpeg',
-        ]);
-        Product::insert([
-            'name' => 'Niza',
-            'precio' => '500',
-            'detail' => 'detalle',
-            'img' => 'producto1a.jpeg',
-        ]);
-        Product::insert([
-            'name' => 'Niza',
-            'precio' => '600',
-            'detail' => 'detalle',
-            'img' => 'producto1a.jpeg',
-        ]);
-        Product::insert([
-            'name' => 'Niza',
-            'precio' => '700',
-            'detail' => 'detalle',
-            'img' => 'producto1a.jpeg',
-        ]);
-        Product::insert([
-            'name' => 'Niza',
-            'precio' => '800',
-            'detail' => 'detalle',
-            'img' => 'producto1a.jpeg',
-        ]);
-    }
+  public function run()
+{
+Product::insert([
+'name' => 'Niza',
+'precio' => '$1000',
+'detail' => 'Soga de algodón estilo Jean',
+'img' => 'niza.jpg',
+]);
+Product::insert([
+'name' => 'New York',
+'precio' => '$1000',
+'detail' => 'Cuero Negro, Cadena, Trenza de algodón',
+'img' => 'newyork.jpg',
+]);
+Product::insert([
+'name' => 'Ibiza',
+'precio' => '$1000',
+'detail' => 'Cuero Blanco, Mostacillas de Madera',
+'img' => 'ibiza.jpg',
+]);
+Product::insert([
+'name' => 'Texas',
+'precio' => '$1000',
+'detail' => 'Cuero Marrón, Gancho Nautico',
+'img' => 'texas.jpg',
+]);
+Product::insert([
+'name' => 'Madrid',
+'precio' => '$1000',
+'detail' => 'Cuero Nude, Trenza de algodón, Cadena',
+'img' => 'madrid.jpg',
+]); }
 }

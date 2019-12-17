@@ -10,8 +10,8 @@ class CartController extends Controller
    //Este método muestra todos los productos del carrito del usuario logueado
    public function index()
    {
-     $cart = Cart::where("user_id", Auth::user()->id)->where("status",0)->get();
-     return view('cart', compact('cart'));
+     $cart = Cart::all();
+     return view('carrito')->with('cart', $cart);
    }
    //Este corresponde al que permite agregar al carrito
    public function store(Request $request)

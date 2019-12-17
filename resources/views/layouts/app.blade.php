@@ -63,6 +63,9 @@
                               <a class="nav-link " href="/">{{ __('Home') }}</a>
                           </li>
                           <li class="nav-item">
+                              <a class="nav-link " href="/productos">{{ __('Productos') }}</a>
+                          </li>
+                          <li class="nav-item">
                               <a class="nav-link" href="/faq">{{ __('FAQ') }}</a>
                           </li><li class="nav-item">
                               <a class="nav-link" href="/contacto">{{ __('Contacto') }}</a>
@@ -79,15 +82,18 @@
                           <li class="nav-item">
                               <a class="nav-link " href="/">{{ __('Home') }}</a>
                           </li>
-                          
+                          <li class="nav-item">
+                              <a class="nav-link " href="/productos">{{ __('Productos') }}</a>
+                          </li>
+
                           <li class="nav-item">
                               <a class="nav-link" href="/faq">{{ __('FAQ') }}</a>
                           </li><li class="nav-item">
                               <a class="nav-link" href="/contacto">{{ __('Contacto') }}</a>
                           </li>
-                          
 
-                            
+
+
                           <li class="nav-item text-danger">
                             <a class="nav-link text-danger" href="/products">{{ __('Productos') }}</a>
 
@@ -108,7 +114,7 @@
                                         {{ __('Cerrar Sesion') }}
                                     </a>
                                     <li class="nav-item">
-                                       <a class="nav-link" href="/carrito"><ion-icon class="ion-icon"name="cart"></ion-icon></a>
+                                       <a class="nav-link" href={{('carrito')}}><ion-icon class="ion-icon"name="cart"></ion-icon></a>
 
                                     </li>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

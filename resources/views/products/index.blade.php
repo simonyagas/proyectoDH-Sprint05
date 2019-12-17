@@ -1,13 +1,14 @@
 @extends('products.layout')
 
 @section('content')
+
 <div class="section">
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
                 <h2>Listado de productos</h2>
             </div>
-            
+
         </div>
     </div>
 @if(Auth::user()->hasRole('admin'))
@@ -30,8 +31,8 @@
             <td>{{ $product->name }}</td>
             <td>{{ $product->precio }}</td>
             <td>{{ $product->detail }}</td>
-            <td><img src="{{ asset("storage/img/$product->img" )}} "width="50" height="50"  alt=""> </td>
-            
+            <td><img src="{{ asset("storage/img/$product->img" )}} "width="20" height="20"  alt=""> </td>
+
             <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
 
@@ -50,7 +51,7 @@
     </table>
 
     {!! $products->links() !!}
-                            
+
 
 
 @else
@@ -58,37 +59,37 @@
 
                           <table class="table table-bordered">
                             <tr>
-                               
+
                                 <th>Nombre</th>
                                 <th>Precio</th>
                                 <th>Detalles</th>
                                 <th>Imagen</th>
                                 <th>Ver más</th>
-                                
+
                             </tr>
                             @foreach ($products as $product)
                             <tr>
-                                
+
                                 <td>{{ $product->name }}</td>
                                 <td>{{ $product->precio }}</td>
                                 <td>{{ $product->detail }}</td>
                                 <td><img src="{{ asset("storage/img/$product->img" )}} "width="50" height="50"  alt=""> </td>
                                 <td>
-                    
+
                                         <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Mostrar</a>
-                            
+
                                         @csrf
-                                        
+
                                     </form>
                                 </td>
                             </tr>
                             @endforeach
                         </table>
-                    
+
                         {!! $products->links() !!}
 
 @endif
 
-    
+
 </div>
 @endsection
