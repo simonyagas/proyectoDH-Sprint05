@@ -35,7 +35,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Imagen:</strong>                
-                <img src="{{ asset("storage/img/$product->img" )}}" alt="">
+                <img src="{{ Storage::url($product->img)}}">
                 
 
             </div>

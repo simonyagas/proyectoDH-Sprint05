@@ -9,9 +9,6 @@
 
     <title>{{ config('app.name', 'Cuerdas') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -29,11 +26,12 @@
           <!-- Codigo ionicons -->
           <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
           <!-- Codigo ionicons -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 
 
-    <link href="{{ asset('css/user.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/user.css') }}" rel="stylesheet">
 
 
 </head>
@@ -60,42 +58,42 @@
 
                         <!-- Authentication Links -->
                           <li class="nav-item">
-                              <a class="nav-link " href="/">{{ __('Home') }}</a>
+                              <a class=" botonNavbar nav-link " href="/">{{ __('Home') }}</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link " href="/productos">{{ __('Productos') }}</a>
+                              <a class=" botonNavbar nav-link " href="/productos">{{ __('Productos') }}</a>
                           </li>
                           <li class="nav-item">
                               <a class="nav-link" href="/faq">{{ __('FAQ') }}</a>
                           </li><li class="nav-item">
-                              <a class="nav-link" href="/contacto">{{ __('Contacto') }}</a>
+                              <a class="botonNavbar nav-link" href="/contacto">{{ __('Contacto') }}</a>
                           </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Ingreso') }}</a>
+                                <a class=" botonNavbar nav-link" href="{{ route('login') }}">{{ __('Ingreso') }}</a>
                             </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registrate') }}</a>
+                                    <a class=" botonNavbar nav-link" href="{{ route('register') }}">{{ __('Registrate') }}</a>
                                 </li>
                         @endguest
                         @auth
                           <li class="nav-item">
-                              <a class="nav-link " href="/">{{ __('Home') }}</a>
+                              <a class=" botonNavbar nav-link " href="/">{{ __('Home') }}</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link " href="/productos">{{ __('Productos') }}</a>
+                              <a class=" botonNavbar nav-link " href="/productos">{{ __('Productos') }}</a>
                           </li>
 
                           <li class="nav-item">
-                              <a class="nav-link" href="/faq">{{ __('FAQ') }}</a>
+                              <a class=" botonNavbar nav-link" href="/faq">{{ __('FAQ') }}</a>
                           </li><li class="nav-item">
-                              <a class="nav-link" href="/contacto">{{ __('Contacto') }}</a>
+                              <a class=" botonNavbar nav-link" href="/contacto">{{ __('Contacto') }}</a>
                           </li>
 
 
 
                           <li class="nav-item text-danger">
-                            <a class="nav-link text-danger" href="/products">{{ __('Productos') }}</a>
+                            <a class=" botonNavbar nav-link text-danger" href="/products">{{ __('Productos') }}</a>
 
 
                           {{-- <li class="nav-item">
@@ -176,5 +174,8 @@
       </div>
       <!-- Copyright -->
     </footer>
+
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{asset('js/navbar.js')}}"></script> 
 </body>
 </html>

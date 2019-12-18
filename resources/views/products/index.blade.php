@@ -31,7 +31,7 @@
             <td>{{ $product->name }}</td>
             <td>{{ $product->precio }}</td>
             <td>{{ $product->detail }}</td>
-            <td><img src="{{ asset("storage/img/$product->img" )}} "width="20" height="20"  alt=""> </td>
+            <td><img src="{{ Storage::url($product->img) }} "width="20" height="20"  alt=""> </td>
 
             <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
@@ -73,7 +73,7 @@
                                 <td>{{ $product->name }}</td>
                                 <td>{{ $product->precio }}</td>
                                 <td>{{ $product->detail }}</td>
-                                <td><img src="{{ asset("storage/img/$product->img" )}} "width="50" height="50"  alt=""> </td>
+                                <td><img src="{{ Storage::url($product->img) }} "width="50" height="50"  alt=""> </td>
                                 <td>
 
                                         <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Mostrar</a>

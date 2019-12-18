@@ -55,13 +55,15 @@
 <div class="my-3 p-3">
 <h2 class="display-5">Pago</h2>
 </div>
-<div class="bg-white shadow-sm mx-auto h-100" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"> Nuestro metodo de pago es transferencia bancaria. Contactanos con tu pedido y te enviamos los datos para poder efectuar la compra!</div>
+<div class="bg-white shadow-sm mx-auto h-100" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"> Nuestro metodo de pago es transferencia bancaria. Contactanos con tu pedido y te enviamos los datos para poder efectuar la compra! <br>
+    <br><br><br> <br><ion-icon name="card"></ion-icon></div>
+
 </div>
 <div class="bg-wh mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center w-25 overflow-hidden">
 <div class="my-3 py-3">
 <h2 class="display-5">Entrega</h2>
 </div>
-<div class="bg-white shadow-sm mx-auto h-100" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">Realizamos entregas en Belgrano, Palermo y Microcentro. Si desea pactar una entrega para otra localidad podemos enviarte tu cuerda a tu domicilio por un costo adicional.</div>
+<div class="bg-white shadow-sm mx-auto h-100" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">Realizamos entregas en Belgrano, Palermo y Microcentro. Si desea pactar una entrega para otra localidad podemos enviarte tu cuerda a tu domicilio por un costo adicional.  <br><br><br><br> <ion-icon name="car"></ion-icon></div>
 </div>
 </div>
 </div>
