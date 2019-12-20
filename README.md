@@ -10,6 +10,10 @@
 * [Simón](https://github.com/simonyagas) :neckbeard:
 
 
+#### Para ver la presentacion
+
+http://bit.ly/dhsprint5
+
 #### Para correr el proyecto:
 
 *clonar el repo
