@@ -57,7 +57,7 @@
         
                       <span>Imagen Actual: </span>
                       <br>
-                      <img src="../../../uploads/{{ $product->img }}" width="200" class="img-fluid">
+                      <img src={{ Storage::url($product->img) }} width="200" class="img-fluid">
         
                     @else
         

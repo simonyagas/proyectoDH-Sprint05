@@ -89,16 +89,17 @@
                           </li>
 
 
-
+                          
+                         
                           <li class="nav-item text-danger">
                             <a class=" botonNavbar nav-link text-danger" href="/products">{{ __('Editar Productos') }}</a>
-
+                        
 
                           {{-- <li class="nav-item">
                             <a class="nav-link" href="/productos">{{ __('Productos') }}</a>
                         </li><li class="nav-item"> --}}
 
-
+                          
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
