@@ -31,6 +31,8 @@ Route::resource('products','ProductController');
 
 Route::get('/perfil','UsuariosController@index');
 
+
+
 Auth::routes();
 
 Route::get('/carrito/{product}', 'CartController@store');

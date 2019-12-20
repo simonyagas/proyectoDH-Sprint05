@@ -7,9 +7,9 @@
             <div class="pull-left">
                 <h2> Mostrar Producto</h2>
             </div>
-            {{-- <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('products.index') }}"> Volver</a>
-            </div> --}}
+            <div class="pull-right">
+                <a class="btn btn-primary" href="{{ route('productos.index') }}"> Volver</a>
+            </div>
         </div>
     </div>
 

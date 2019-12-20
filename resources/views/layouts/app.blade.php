@@ -46,7 +46,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-4">
-                     <img src="../img/logo.png" class="w-50 logo-footer" >
+                     <a href="/" > <img src="../img/logo.png" class="w-50 logo-footer" ></a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

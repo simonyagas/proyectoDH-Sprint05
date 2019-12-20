@@ -55,38 +55,10 @@
 
 
 @else
+@php
+    return view('faq');
+@endphp
 
-
-                          <table class="table table-bordered">
-                            <tr>
-
-                                <th>Nombre</th>
-                                <th>Precio</th>
-                                <th>Detalles</th>
-                                <th>Imagen</th>
-                                <th>Ver más</th>
-
-                            </tr>
-                            @foreach ($products as $product)
-                            <tr>
-
-                                <td>{{ $product->name }}</td>
-                                <td>{{ $product->precio }}</td>
-                                <td>{{ $product->detail }}</td>
-                                <td><img src="{{ Storage::url($product->img) }} "width="50" height="50"  alt=""> </td>
-                                <td>
-
-                                        <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Mostrar</a>
-
-                                        @csrf
-
-                                    </form>
-                                </td>
-                            </tr>
-                            @endforeach
-                        </table>
-
-                        {!! $products->links() !!}
 
 @endif
 

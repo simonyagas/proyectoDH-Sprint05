@@ -34,10 +34,17 @@
     </figcaption>
     <div class="bottom-wrap">
       <a  id="" href="/carrito/{{$product->id}}" class="botonComprar btn btn-sm btn-primary float-right">Comprar</a>
+      <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Mostrar</a>
       <div class="price-wrap h5">
         <span class="price-new"></del>
       </div> <!-- price-wrap.// -->
     </div> <!-- bottom-wrap.// -->
+    <td>
+      <form action="{{ route('products.destroy',$product->id) }}" method="POST">
+          
+          @csrf
+      </form>
+  </td>
   </figure>
 </div> <!-- col // -->
 <?php endforeach ?>
