@@ -12,13 +12,22 @@
         </tr>
       </thead>
       <tbody>
+        <?php $total = 0; ?>
+        <?php $unidades = 0; ?>
         @foreach ($cart as $item)
           <tr>
             <td>{{$item->name}}</td>
             <td>{{$item->cant}}</td>
             <td>{{$item->price}}</td>
           </tr>
+          <?php $total += 1000 ?>
+          <?php $unidades += 1 ?>
         @endforeach
+        <tr>
+          <td>Total</td>
+          <td>{{ $unidades }}</td>
+          <td>{{ number_format($total, 2, '.', '') }}</td>
+        </tr>
       </tbody>
     </table>
     <form class="" action="/cartclose" method="post">
