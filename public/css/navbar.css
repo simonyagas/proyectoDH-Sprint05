@@ -1,0 +1,12 @@
+@media (max-width: 767px) {
+    #navbarSupportedContent img{
+    display: none;
+  }
+}
+
+@media (min-width: 767px){
+    #navbarSupportedContent img{
+     font-size: 25;  
+    display: inline-block;
+  }
+}

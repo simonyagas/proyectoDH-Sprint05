@@ -12,7 +12,7 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->decimal('price', 10, 2);
+            $table->decimal('precio', 10, 2);
             $table->string('detail');
             $table->string('img');
             $table->timestamps();

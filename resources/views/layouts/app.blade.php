@@ -28,10 +28,8 @@
           <!-- Codigo ionicons -->
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
          <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-
-
         <link href="{{ asset('css/user.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
 
 
 </head>
@@ -93,7 +91,7 @@
 
 
                           <li class="nav-item text-danger">
-                            <a class=" botonNavbar nav-link text-danger" href="/products">{{ __('Productos') }}</a>
+                            <a class=" botonNavbar nav-link text-danger" href="/products">{{ __('Editar Productos') }}</a>
 
 
                           {{-- <li class="nav-item">
