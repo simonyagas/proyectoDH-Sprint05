@@ -24,6 +24,14 @@ http://bit.ly/dhsprint5
 ```
 
 *crear y configurar el .env
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=cuerdas_db
+DB_USERNAME=root (o la que uses)
+DB_PASSWORD=root (o la que uses)
+```
 
 *generar el key de artisan
 ```
