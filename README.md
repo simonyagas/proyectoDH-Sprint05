@@ -25,6 +25,8 @@ http://bit.ly/dhsprint5
 
 *crear y configurar el .env
 ```
+En especial estas cosas:
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -46,9 +48,14 @@ DB_PASSWORD=root (o la que uses)
 ```
 > php artisan serve
 ```
+Usuarios que ya trae pre-cargados:
+
 
 Usuario: usuario@gmail.com
+
 pass: usuario1234
 
 Administrador: admin@gmail.com
+
 pass: admin1234
+
